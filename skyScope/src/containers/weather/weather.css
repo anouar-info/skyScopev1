@@ -1,0 +1,156 @@
+.weather{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.weather-content{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 10rem;
+}
+.weather-content .header h1{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 45px;
+    margin-bottom: 0.5rem;
+    
+}
+.header{
+    flex-direction: column;
+}
+.header p{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: #2EE8C6;   
+    margin-left: 0.5rem;
+}
+.sections{
+    margin-top:4rem;
+    justify-content: space-around;
+    align-items:center;
+    margin-left:1.5rem;
+}
+.Section{
+    flex: 1;
+    justify-content:space-around;
+    align-items:center;
+}
+.weather-icon{
+    display :flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.weather-image img{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: inline-block;
+}
+.weather-input{
+    width: 100%;
+    margin: 2rem 0 1rem;
+    display: flex;
+    flex-direction: row;
+}
+.weather-input input{
+    flex: 2;
+    width: 100%;
+    min-height: 65px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #4FA1B3;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    /* identical to box height */
+    color: #c7e9f5;
+    background: #052D56;
+    border-radius: 10px;
+    border: 2px solid var(--color-footer);
+    padding: 0 1rem;
+    outline: none;
+    margin-left: 0;
+}
+.weather-input button{
+    flex: 0.6;
+    width: 100%;
+    min-height: 65px;
+    background: linear-gradient(256.91deg, #2EE8C6 46.85%, #FFFFFF 144.07%);
+    border-radius: 10px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+
+    padding: 0 1rem;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15.5px;
+    line-height: 27px;
+    flex-wrap: nowrap;
+    color: #FFFFFF;
+    
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    cursor: pointer;
+    outline: none;
+}
+.weather-input button:hover{
+    background: linear-gradient(256.91deg, #02b594 46.85%, #2EE8C6 144.07%);
+}
+@media screen and (max-width: 1220px) {
+    /* Customizing feature component as per needs */
+    .weather {
+        flex-direction: column-reverse;}
+    .weather-image img{
+        width: 100%;
+        height: 100%;
+    }
+    .weather-icon{
+        display: flex;
+        align-items: center; 
+    }
+    .weather-content{
+        margin-right: 0;
+    }
+    .sections{
+        margin-top:0;
+        margin-left:1.5rem;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    /* Customizing feature component as per needs */
+    .astronomy-feature {
+        flex-direction: column;
+        justify-content: center;
+    }
+  
+    /* Customizing feature component as per needs */
+    .astronomy-feature {
+        margin-top: 0.5rem;
+    }
+
+    .astronomy-heading h1 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+}
+@media screen and (max-width: 550px){
+    .weather-input button,
+    .weather-input input{
+        font-size: 12px;
+        line-height: 24px;
+    }
+}
+@media screen and (max-width: 390px) {
+}

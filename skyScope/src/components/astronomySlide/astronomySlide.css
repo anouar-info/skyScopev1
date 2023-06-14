@@ -1,0 +1,58 @@
+.astronomy-slide {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .astronomy-slide .astronomy-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+  
+  .astronomy-slide .astronomy-header .title {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+    font-family: 'Manrope';
+  }
+  
+  .astronomy-slide .sub_title {
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .astronomy-slide .astronomy-cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+  
+  .astronomy-slide .astronomy-cards .card {
+    margin: 1rem;
+  }
+  
+  @media screen and (max-width: 1270px) {
+    .astronomy-slide {
+      flex-direction: column;
+    }
+  }
+  
+  @media screen and (max-width: 650px) {
+    .astronomy-slide .astronomy-header h1 {
+      font-size: 28px;
+      line-height: 40px;
+    }
+  }
+  

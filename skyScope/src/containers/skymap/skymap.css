@@ -1,0 +1,83 @@
+.skymap{
+    display: flex;
+}
+.section__margin{
+    margin :4rem 6rem;
+}
+.skymap-content{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    /* margin:auto 10%; */
+    text-align: left;
+}
+.skymap-content h1{
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+}
+.skymap-content p{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #81AFDD;
+}
+.skymap-content a p{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: #02BBE4;
+}
+.skymap-image{
+    margin: 0 3rem 0 0;
+  
+    
+    
+}
+.skymap-image img{
+    width: 100%;
+    height: 80%;
+    margin: 2rem 1rem 6rem 1rem;
+    
+}
+@media screen and (max-width: 1280px) {
+
+    .skymap-image img{
+        margin:2rem 2rem 0 2rem;
+        height: 80%;
+        width: 100%;
+    }
+    .skymap-content{
+        margin-top:1rem;
+        
+    }
+    .section__margin{
+        margin:2rem 2rem;
+    }
+}
+@media screen and (max-width: 814px) {
+    .skymap {
+        flex-direction: column;
+    }
+
+    .skymap-image img{
+        margin:0 2rem 0 2rem;
+    }
+    .skymap-content{
+        margin-top:1rem;
+    }
+}
+@media screen and (max-width:650px){
+    .skymap .skymap-content h1{
+        font-size: 28px;
+        line-height: 40px;
+        text-align: left;
+    }
+}
