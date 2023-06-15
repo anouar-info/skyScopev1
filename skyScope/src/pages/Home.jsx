@@ -1,4 +1,4 @@
-import React from 'react';
+
 import "../App.css";
 import { Navbar, CTA } from "../components";
 import { Header, Astronomy, Weather, Skymap, Blog, Footer } from "../containers";

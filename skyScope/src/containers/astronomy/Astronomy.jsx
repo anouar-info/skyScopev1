@@ -1,4 +1,4 @@
-import React from 'react'
+
 import "./astronomy.css"
 
 import Card from "../../components/card/Card"

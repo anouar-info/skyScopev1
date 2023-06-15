@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { useState } from 'react';
 import {earth_nobg} from "../../assets"
 import "./header.css";

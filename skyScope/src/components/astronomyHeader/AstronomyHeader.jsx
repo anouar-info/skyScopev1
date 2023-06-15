@@ -1,4 +1,4 @@
-import React from 'react'
+
 import "./astronomyHeader.css"
 import AstronomySlide from '../astronomySlide/AstronomySlide';
 function AstronomyHeader(){

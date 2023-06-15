@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import logo from "../../assets/logo.png";
 import { VscChevronDown } from "react-icons/vsc";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";

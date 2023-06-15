@@ -1,4 +1,4 @@
-import React from 'react'
+import PropTypes from 'prop-types';
 import "./feature.css"
 function Feature({title,text,link}){
   
@@ -28,5 +28,11 @@ function Feature({title,text,link}){
     }
     
 }
+Feature.propTypes = {
+  link: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+};
+
 
 export default Feature;

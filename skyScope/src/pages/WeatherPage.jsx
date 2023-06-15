@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { Navbar, WeatherContent } from "../components";
 import { Footer } from "../containers";
 function WeatherPage() {

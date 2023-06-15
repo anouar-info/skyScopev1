@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { Navbar, AstronomyHeader } from "../components";
 import { Footer } from "../containers";
 function AstronomyPage() {

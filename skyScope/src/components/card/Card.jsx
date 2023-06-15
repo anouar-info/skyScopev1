@@ -1,6 +1,6 @@
-import React from "react";
-import "./card.css";
 
+import "./card.css";
+import PropTypes from 'prop-types';
 function Card({ link, img, title, description }) {
   return (
     <div className="card">
@@ -15,5 +15,11 @@ function Card({ link, img, title, description }) {
     </div>
   );
 }
+Card.propTypes = {
+  link: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+};
 
 export default Card;

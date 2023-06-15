@@ -1,4 +1,4 @@
-import React from 'react'
+
 import "./skymap.css"
 import { skymap } from '../../assets'
 const Skymap = () => {
