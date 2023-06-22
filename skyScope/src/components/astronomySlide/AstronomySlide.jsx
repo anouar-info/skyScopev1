@@ -1,5 +1,5 @@
-import React from "react";
-import Card from '../card/Card';
+import PropTypes from 'prop-types';
+import Card from '../Card';
 import "./astronomySlide.css"
 function AstronomySlide({title, description, cards}) {
 
@@ -32,4 +32,15 @@ function AstronomySlide({title, description, cards}) {
   );
 }
 
+AstronomySlide.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  cards:  PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+      img: PropTypes.string.isRequired,
+    })
+  ),
+};
 export default AstronomySlide;

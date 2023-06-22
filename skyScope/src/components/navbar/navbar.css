@@ -46,28 +46,9 @@
 .sign p:hover,
 .menu-nav p:hover,
 .dropdown-content a:hover{
-    color: #38BDF8;
+    color: #00897B;
 }
-.sign button,
-.menu-navbar button{
-    width: 170px;
-    height: 64px;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    border:none;
-    outline: none;
-    background: linear-gradient(256.91deg, #2EE8C6 46.85%, #FFFFFF 144.07%);
-    border-radius: 10px;
-    font-family: 'Manrope';
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 25px;
-    color: #FFFFFF;
-}
-.sign button:hover,
-.menu-navbar button:hover{
-    background: linear-gradient(256.91deg, #02b594 46.85%, #2EE8C6 144.07%);
-}
+
 .menu{
     margin-left: 1rem;
     position: relative;

@@ -66,26 +66,7 @@
     line-height: 27px;
     color: #4FA1B3;
 }
-.header-content__input button {
-    flex: 0.6;
-    width: 100%;
-    min-height: 65px;
-    background: linear-gradient(256.91deg, #2EE8C6 46.85%, #FFFFFF 144.07%);
-    border-radius: 10px;
-    transform: matrix(1, 0, 0, 1, 0, 0);
-    padding: 0 1rem;
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 27px;
-    color: #fff;
-    cursor: pointer;
-    outline: none;
-}
-.header-content__input button:hover{
-    background: linear-gradient(256.91deg, #02b594 46.85%, #2EE8C6 144.07%);
-}
+
 .header-image {
     flex: 1;
     display: flex;

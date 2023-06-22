@@ -1,6 +1,6 @@
-import React from 'react';
-import './article.css';
 
+import './article.css';
+import PropTypes from 'prop-types';
 const Article = ({ imgUrl, date, text }) => (
   <div className="blog-container_article">
     <div className="blog-container_article-image">
@@ -15,5 +15,10 @@ const Article = ({ imgUrl, date, text }) => (
     </div>
   </div>
 );
+Article.propTypes = {
+  imgUrl: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+};
 
 export default Article;

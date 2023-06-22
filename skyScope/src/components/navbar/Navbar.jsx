@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import logo from "../../assets/logo.png";
 import { VscChevronDown } from "react-icons/vsc";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
@@ -66,8 +66,8 @@ const Navbar = () => {
             <a href="/#home">Home</a>
           </p>
           <p>
-            <a href="/#astronomy">
-              Astronomy <VscChevronDown color="white" size={18} />
+            <a href="/#astronomy" className="flex">
+              Astronomy <VscChevronDown className="mt-1 ml-1" color="white" size={20} />
             </a>
           </p>
           <p>
@@ -83,9 +83,11 @@ const Navbar = () => {
       </div>
       <div className="sign">
         <p onClick={handleSignInClick}>sign in</p>
-        <button type="button" onClick={handleSignUpClick}>
-          sign up
-        </button>
+        
+        <button type="button" onClick={handleSignUpClick} className="text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 font-medium text-lg rounded-lg px-7 py-2.5 text-center mr-2 ">Sign Up</button>
+
+          
+    
       </div>
       <div className="menu">
         {toggleMenu ? (
@@ -122,9 +124,7 @@ const Navbar = () => {
             </div>
             <div className="menu-sign">
               <p onClick={handleSignInClick}>sign in</p>
-              <button type="button" onClick={handleSignUpClick}>
-                sign up
-              </button>
+              <button type="button" onClick={handleSignUpClick} className="text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 font-medium text-lg rounded-lg px-7 py-2.5 text-center mr-2 ">Sign Up</button>
             </div>
           </div>
         )}

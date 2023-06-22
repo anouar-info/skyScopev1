@@ -1,6 +1,7 @@
 .section{
     display: flex;
     margin-top: 2rem;
+    font-family: var(--font-family);
 }
 .section-content{
     display: flex;
@@ -9,8 +10,11 @@
 .section-title{
     margin-top: 0;
 }
+.section-title h1:hover{
+    color: cyan;
+}
 .section-title h1{
-    font-family: 'Poppins';
+    
     font-style: normal;
     font-weight: 600;
     font-size: 18px;

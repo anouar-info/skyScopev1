@@ -20,6 +20,7 @@ import galaxy from "./galaxy.svg";
 import galaxy2 from "./galaxy2.png";
 import planet from "./planet.png";
 import earth_nobg from "./earth_nobg.png";
+import earth_nobg_psd from "./earth_nobg_psd.png";
 import skymap from "./starmap.png";
 import discount from "./Discount.svg";
 import facebook from "./facebook.svg";
@@ -38,11 +39,12 @@ import sky_bg from "./sky_bg2.jpg";
 import sky_bg2 from "./sky_bg3.png";
 import starsHeader from "./stars.png";
 import starred_bg2 from "./starred_bg2.svg";
-
+import sky_bg_f1 from "./sky_bg_f1.png";
 import starred_bg_f1 from "./starred_bg_f1.png";
-import card1 from "./card1.jpg";
+import telescope from "./telescope.png";
+import card1 from "./card1.png";
 import card2 from "./card2.png";
-import card3 from "./card3.jpg";
+import card3 from "./card3.png";
 export {
   airbnb,
   stars,
@@ -66,6 +68,7 @@ export {
   instagram,
   linkedin,
   twitter,
+  telescope,
   blog01,
   blog02,
   blog03,
@@ -80,6 +83,7 @@ export {
   rocket2,
   sky_bg,
   sky_bg2,
+  sky_bg_f1,
   starsHeader,
   starred_bg2,
   
@@ -88,4 +92,5 @@ export {
   card2,
   card3,
   earth_nobg,
+  earth_nobg_psd,
 };
