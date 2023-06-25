@@ -11,6 +11,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="astronomy" element={<AstronomyPage />} />
         <Route path="weather" element={<WeatherPage />} />
+        
       </Routes>
     
   );

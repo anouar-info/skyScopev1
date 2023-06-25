@@ -71,7 +71,7 @@ const Navbar = () => {
             </a>
           </p>
           <p>
-            <a href="/#weather">Weather</a>
+            <a href="/weather">Weather</a>
           </p>
           <p>
             <a href="/#skymap">Sky map</a>

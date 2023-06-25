@@ -1,7 +1,7 @@
 .section{
     display: flex;
     margin-top: 2rem;
-    font-family: var(--font-family);
+    
 }
 .section-content{
     display: flex;

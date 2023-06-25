@@ -22,14 +22,14 @@
 }
 
 .cta-content p {
-    font-family: var(--font-family);
+   
     font-size: 12px;
     line-height: 30px;
     font-weight: 500;
 }
 
 .cta-content h3 {
-    font-family: var(--font-family);
+    
     font-size: 24px;
     line-height: 45px;
     font-weight: 800;
@@ -46,7 +46,7 @@
 .cta-btn button {
     background: #000;
     color: #fff;
-    font-family: var(--font-family);
+   
     font-weight: 700;
     font-size: 18px;
     line-height: 30px;

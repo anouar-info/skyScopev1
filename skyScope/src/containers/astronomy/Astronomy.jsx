@@ -8,7 +8,7 @@ import card3 from "../../assets/card3.png"
 const Astronomy = () => {
   return (
   <div className=" flex flex-col w-11/12 section__margin justify-evenly" id="astronomy">
-    <div className="flex items-center display-center  font-manrope flex-col  ">
+    <div className="flex items-center display-center flex-col  ">
       <div><h1 className="  font-extrabold my-4 text-7xl gradient__text">Astronomy</h1></div>
       <div><p className="simple__text text-center "> Astronomy is a natural science that studies celestial objects and phenomena. It uses mathematics, physics, and chemistry in order to explain their origin and evolution. Objects of interest include planets, moons, stars, nebulae, galaxies, and comets.</p></div>
     </div>
