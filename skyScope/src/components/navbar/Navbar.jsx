@@ -3,6 +3,7 @@ import logo from "../../assets/logo.png";
 import { VscChevronDown } from "react-icons/vsc";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import "./navbar.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -71,7 +72,7 @@ const Navbar = () => {
             </a>
           </p>
           <p>
-            <a href="/weather">Weather</a>
+            <Link to="weather">Weather</Link>
           </p>
           <p>
             <a href="/#skymap">Sky map</a>

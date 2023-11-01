@@ -1,6 +1,7 @@
 
 import "./App.css";
-import { Home,AstronomyPage,WeatherPage } from './pages';
+
+import { Home,AstronomyPage ,WeatherPage} from './pages';
 import {Routes,Route} from 'react-router-dom';
 
 
@@ -10,8 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="astronomy" element={<AstronomyPage />} />
-        <Route path="weather" element={<WeatherPage />} />
-        
+        <Route path="weather/*" element={<WeatherPage />} />
       </Routes>
     
   );

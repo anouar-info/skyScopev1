@@ -42,6 +42,7 @@ import starred_bg2 from "./starred_bg2.svg";
 import sky_bg_f1 from "./sky_bg_f1.png";
 import starred_bg_f1 from "./starred_bg_f1.png";
 import telescope from "./telescope.png";
+import telescope2 from "./telescope2.png";
 import card1 from "./card1.png";
 import card2 from "./card2.png";
 import card3 from "./card3.png";
@@ -69,6 +70,7 @@ export {
   linkedin,
   twitter,
   telescope,
+  telescope2,
   blog01,
   blog02,
   blog03,

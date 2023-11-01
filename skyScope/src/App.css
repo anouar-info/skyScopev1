@@ -12,7 +12,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  font-family: var(--font-family);
+  font-family: SF Pro Display, sans-serif;
 }
 .header-gradient {
   background-image:linear-gradient(180deg, rgba(7,177,253,0.5159313725490196) 0%, rgba(3,162,252,0.5579481792717087) 22%, rgba(2,151,251,0.5467436974789917) 41%, rgba(0,112,235,0.5215336134453781) 72%, rgba(2,88,187,0.46551120448179273) 83%, rgba(4,67,144,0.5187324929971988) 92%, rgba(6,48,105,0.5327380952380952) 97%, rgba(8,16,41,0.9613095238095238) 100%);
@@ -25,6 +25,9 @@ body {
 a {
   color: unset;
   text-decoration: none;
+}
+.font-weather{
+  font-family: SF Pro Display, sans-serif;
 }
 
 .gradient__bg {
@@ -55,6 +58,19 @@ a {
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
+.gradient__card{
+  background: rgb(12,74,110);
+  background: linear-gradient(90deg, rgba(12,74,110,1) 0%, rgba(7,89,133,1) 14%, rgba(3,105,161,1) 25%, rgba(2,132,199,1) 47%, rgba(14,165,233,1) 64%, rgba(56,189,248,1) 76%, rgba(56,189,248,1) 79%, rgba(125,211,252,1) 94%, rgba(186,230,253,1) 100%);
+}
+.gradient__card180{
+  background: rgb(12,74,110);
+  background: linear-gradient(180deg, rgba(12,74,110,1) 0%, rgba(7,89,133,1) 14%, rgba(3,105,161,1) 25%, rgba(2,132,199,1) 47%, rgba(14,165,233,1) 64%, rgba(56,189,248,1) 76%, rgba(56,189,248,1) 79%, rgba(125,211,252,1) 94%, rgba(186,230,253,1) 100%);
+}
+.gradient__card145{
+  background: rgb(12,74,110);
+  background: linear-gradient(145deg, rgba(12,74,110,1) 0%, rgba(7,89,133,1) 14%, rgba(3,105,161,1) 25%, rgba(2,132,199,1) 47%, rgba(14,165,233,1) 64%, rgba(56,189,248,1) 76%, rgba(56,189,248,1) 79%, rgba(125,211,252,1) 94%, rgba(186,230,253,1) 100%);
+}
+
 .simple__text{
   font-family: 'Manrope';
     font-style: normal;
@@ -79,7 +95,11 @@ a {
 .mix-blend-screen {
   mix-blend-mode: screen;
 }
-
+.position-fixed{
+  position: -webkit-sticky; /* Safari & IE */
+position: sticky;
+top: 0;
+}
 
 
 @-webkit-keyframes scale-up-center {
@@ -124,3 +144,9 @@ a {
   }  
 }
 
+label {
+  -webkit-text-size-adjust: 100%; /* Chrome 54+, Chrome Android 54+, Edge 79+ */
+  text-size-adjust: 100%; /* Chrome 54+, Chrome Android 54+, Edge 79+ */
+  -webkit-print-color-adjust: exact; /* Chrome 17+, Chrome Android 18+, Edge 79+ */
+  print-color-adjust: exact; /* Chrome 17+, Chrome Android 18+, Edge 79+ */
+}
