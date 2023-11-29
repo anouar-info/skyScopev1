@@ -1,0 +1,7 @@
+{
+    "AppSyncApiName": "skyScope",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "S3DeploymentBucket": "amplify-skyscope-dev-153841-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/8fc0f5393fee3176868c7b5d609d601fe24cd265"
+}
