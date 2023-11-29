@@ -1,5 +1,4 @@
-
-
+import React from "react";
 
 const Footer = () => (
   <div className=" flex justify-center items-center  ">

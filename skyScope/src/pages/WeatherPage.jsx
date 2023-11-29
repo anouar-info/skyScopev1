@@ -1,3 +1,4 @@
+import React from "react";
 import { Current, Forecast, Articles, Sidebar } from "../weather/containers";
 import { Routes, Route } from "react-router-dom";
 import { Footer } from "../weather/containers";
@@ -16,7 +17,7 @@ function WeatherPage() {
         </Routes>
         </div>
         </div>
-        <Footer />
+         <Footer /> 
       </div>
     </div>
   );

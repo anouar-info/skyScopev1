@@ -1,11 +1,13 @@
+import React from "react";
 import { useState } from "react";
 import logo from "../../assets/logo.png";
 import { VscChevronDown } from "react-icons/vsc";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import "./navbar.css";
 import { Link } from "react-router-dom";
-
+import { useAuthenticator } from '@aws-amplify/ui-react';
 const Navbar = () => {
+  const { user, signOut } = useAuthenticator((context) => [context.user]);
   const [toggleMenu, setToggleMenu] = useState(false);
   const [showSignIn, setShowSignIn] = useState(false);
   const [showSignUp, setShowSignUp] = useState(false);
@@ -72,20 +74,21 @@ const Navbar = () => {
             </a>
           </p>
           <p>
-            <Link to="weather">Weather</Link>
+            <Link to="weather/home">Weather</Link>
           </p>
           <p>
             <a href="/#skymap">Sky map</a>
           </p>
           <p>
-            <a href="/#blog">Blog</a>
+            <a href="/#blog">blog</a>
           </p>
         </div>
       </div>
       <div className="sign">
-        <p onClick={handleSignInClick}>sign in</p>
+      
+       
         
-        <button type="button" onClick={handleSignUpClick} className="text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 font-medium text-lg rounded-lg px-7 py-2.5 text-center mr-2 ">Sign Up</button>
+        <button type="button" onClick={signOut}  className="text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 font-medium text-lg rounded-lg px-7 py-2.5 text-center mr-2 ">Sign out</button>
 
           
     
@@ -124,8 +127,8 @@ const Navbar = () => {
               </p>
             </div>
             <div className="menu-sign">
-              <p onClick={handleSignInClick}>sign in</p>
-              <button type="button" onClick={handleSignUpClick} className="text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 font-medium text-lg rounded-lg px-7 py-2.5 text-center mr-2 ">Sign Up</button>
+              <p><a href="signIn">sign in </a></p>
+              <button type="button"  className="text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 font-medium text-lg rounded-lg px-7 py-2.5 text-center mr-2 "><a href="/signIn">signUp</a></button>
             </div>
           </div>
         )}

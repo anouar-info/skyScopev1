@@ -1,4 +1,4 @@
-
+import React from "react";
 import './article.css';
 import PropTypes from 'prop-types';
 const Article = ({ imgUrl, date, text }) => (

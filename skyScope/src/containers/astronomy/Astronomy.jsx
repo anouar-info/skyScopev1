@@ -1,6 +1,6 @@
 
 
-
+import React from "react";
 import Card from "../../components/Card"
 import card1 from "../../assets/card1.png"
 import telescope from "../../assets/telescope.png"

@@ -1,4 +1,4 @@
-
+import React from "react";
 import { Link } from "react-router-dom";
 import { telescope2 } from "../../assets";
 const sidebar = () => {

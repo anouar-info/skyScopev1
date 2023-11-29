@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import "./weather.css";
 import { sun_cloud } from '../../assets';
 import { Section } from '../../components';
