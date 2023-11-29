@@ -40,7 +40,7 @@
 }
 
 .astronomy-heading h1 {
-    font-family: 'Manrope';
+   
     font-style: normal;
     font-weight: 800;
     font-size: 34px;
@@ -61,12 +61,12 @@
     flex-direction: column;
 }
 .astronomy-header .title {
-    font-family: var(--font-family);
+    
     font-weight: 800;
     font-size: 62px;
     line-height: 75px;
     letter-spacing: -0.04em;
-    font-family: 'Manrope';
+   
 }
 .sub_title {
     margin-left:  25%;

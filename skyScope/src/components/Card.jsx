@@ -1,5 +1,5 @@
 
-
+import React from "react";
 import PropTypes from 'prop-types';
 function Card({  img, title, description }) {
   const divStyle = {

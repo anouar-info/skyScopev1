@@ -10,6 +10,9 @@ import skymap2 from "./Frame_2.png";
 import send from "./Send.svg";
 import shield from "./Shield.svg";
 import star from "./Star.svg";
+import sun from "./sun.png";
+import cloudy from "./cloudy.png";
+import cloudy_rain from "./cloudy_rain.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import google from "./google.svg";
@@ -42,10 +45,14 @@ import starred_bg2 from "./starred_bg2.svg";
 import sky_bg_f1 from "./sky_bg_f1.png";
 import starred_bg_f1 from "./starred_bg_f1.png";
 import telescope from "./telescope.png";
+import telescope2 from "./telescope2.png";
 import card1 from "./card1.png";
 import card2 from "./card2.png";
 import card3 from "./card3.png";
+import cloud_rain_moon from "./cloud_rain_moon.svg";
+
 export {
+  cloud_rain_moon,
   airbnb,
   stars,
   binance,
@@ -69,6 +76,7 @@ export {
   linkedin,
   twitter,
   telescope,
+  telescope2,
   blog01,
   blog02,
   blog03,
@@ -86,11 +94,14 @@ export {
   sky_bg_f1,
   starsHeader,
   starred_bg2,
-  
+  sun,
+  cloudy,
+  cloudy_rain,
   starred_bg_f1,
   card1,
   card2,
   card3,
   earth_nobg,
   earth_nobg_psd,
+
 };

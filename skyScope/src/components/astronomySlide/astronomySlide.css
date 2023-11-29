@@ -15,12 +15,12 @@
   }
   
   .astronomy-slide .astronomy-header .title {
-    font-family: var(--font-family);
+  
     font-weight: 800;
     font-size: 62px;
     line-height: 75px;
     letter-spacing: -0.04em;
-    font-family: 'Manrope';
+  
   }
   
   .astronomy-slide .sub_title {

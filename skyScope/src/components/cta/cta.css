@@ -7,8 +7,6 @@
     padding: 2rem;
     margin: 4rem;
     border-radius: 1rem;
-    background: rgb(12,74,110);
-    background: linear-gradient(90deg, rgba(12,74,110,1) 0%, rgba(7,89,133,1) 14%, rgba(3,105,161,1) 25%, rgba(2,132,199,1) 47%, rgba(14,165,233,1) 64%, rgba(56,189,248,1) 76%, rgba(56,189,248,1) 79%, rgba(125,211,252,1) 94%, rgba(186,230,253,1) 100%);
 }
 .section__margin{
     margin :0 0;
@@ -22,14 +20,14 @@
 }
 
 .cta-content p {
-    font-family: var(--font-family);
+   
     font-size: 12px;
     line-height: 30px;
     font-weight: 500;
 }
 
 .cta-content h3 {
-    font-family: var(--font-family);
+    
     font-size: 24px;
     line-height: 45px;
     font-weight: 800;
@@ -46,7 +44,7 @@
 .cta-btn button {
     background: #000;
     color: #fff;
-    font-family: var(--font-family);
+   
     font-weight: 700;
     font-size: 18px;
     line-height: 30px;

@@ -6,4 +6,4 @@ export { default as Navbar } from './navbar/Navbar';
 export { default as AstronomyHeader } from './astronomyHeader/AstronomyHeader';
 export { default as Card} from './Card';
 export { default as AstronomySlide} from './astronomySlide/AstronomySlide';
-export { default as WeatherContent } from './weatherContent/WeatherContent';
+

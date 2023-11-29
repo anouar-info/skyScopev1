@@ -14,7 +14,7 @@
 }
 
 .header-content h1 {
-    font-family: var(--font-family);
+    
     font-weight: 800;
     font-size: 62px;
     line-height: 75px;
@@ -22,7 +22,7 @@
 }
 
 .header-content .simple__text{
-    font-family: 'Manrope';
+    
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -43,7 +43,7 @@
     flex: 2;
     width: 100%;
     min-height: 65px;
-    font-family: 'Manrope';
+   
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
