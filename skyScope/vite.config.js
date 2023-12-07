@@ -4,8 +4,10 @@ import reactRefresh from "@vitejs/plugin-react-refresh";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  build: { manifest: true },
-  base: process.env.mode === "production" ? "/static/" : "/",
+  build: { outDir:"build",manifest: true },
+  base: "/",
   root: "./src",
   plugins: [reactRefresh()],
 });
+
+
