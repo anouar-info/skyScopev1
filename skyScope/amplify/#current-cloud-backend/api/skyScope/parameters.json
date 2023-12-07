@@ -1,5 +1,11 @@
 {
-  "AppSyncApiName": "skyScope",
+  "AppSyncApiName": "skyscope",
   "DynamoDBBillingMode": "PAY_PER_REQUEST",
-  "DynamoDBEnableServerSideEncryption": false
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authskyscope74c6842c",
+      "Outputs.UserPoolId"
+    ]
+  }
 }

@@ -1,13 +1,13 @@
 {
-    "AppSyncApiName": "skyScope",
+    "AppSyncApiName": "skyscope",
     "DynamoDBBillingMode": "PAY_PER_REQUEST",
     "DynamoDBEnableServerSideEncryption": false,
-    "authRoleName": {
-        "Ref": "AuthRoleName"
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authskyscope74c6842c",
+            "Outputs.UserPoolId"
+        ]
     },
-    "unauthRoleName": {
-        "Ref": "UnauthRoleName"
-    },
-    "S3DeploymentBucket": "amplify-skyscope-dev-153841-deployment",
-    "S3DeploymentRootKey": "amplify-appsync-files/8fc0f5393fee3176868c7b5d609d601fe24cd265"
+    "S3DeploymentBucket": "amplify-skyscope-dev-21636-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/22a29cf21a8bef5eb4b3afa42d1b1f81c461d798"
 }

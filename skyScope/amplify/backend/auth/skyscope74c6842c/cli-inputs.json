@@ -1,10 +1,10 @@
 {
   "version": "1",
   "cognitoConfig": {
-    "identityPoolName": "skyscopece7eb173_identitypool_ce7eb173",
+    "identityPoolName": "skyscope74c6842c_identitypool_74c6842c",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "skyscoce7eb173",
-    "userPoolName": "skyscopece7eb173_userpool_ce7eb173",
+    "resourceNameTruncated": "skysco74c6842c",
+    "userPoolName": "skyscope74c6842c_userpool_74c6842c",
     "autoVerifiedAttributes": [
       "email"
     ],
@@ -31,10 +31,10 @@
     "userpoolClientReadAttributes": [
       "email"
     ],
-    "userpoolClientLambdaRole": "skyscoce7eb173_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "skysco74c6842c_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "ce7eb173",
-    "resourceName": "skyscopece7eb173",
+    "sharedId": "74c6842c",
+    "resourceName": "skyscope74c6842c",
     "authSelections": "identityPoolAndUserPool",
     "useDefault": "default",
     "usernameAttributes": [

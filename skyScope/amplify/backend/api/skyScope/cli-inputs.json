@@ -1,22 +1,15 @@
 {
   "version": 1,
   "serviceConfiguration": {
-    "apiName": "skyScope",
+    "apiName": "skyscope",
     "serviceName": "AppSync",
     "defaultAuthType": {
       "mode": "API_KEY",
-      "keyDescription": "api key description",
-      "expirationTime": 30
+      "expirationTime": 30,
+      "apiKeyExpirationDate": "2024-01-03T04:53:57.335Z",
+      "keyDescription": ""
     },
-    "additionalAuthTypes": [
-      {
-        "mode": "AWS_IAM"
-      }
-    ],
-    "conflictResolution": {
-      "defaultResolutionStrategy": {
-        "type": "NONE"
-      }
-    }
+    "additionalAuthTypes": [],
+    "conflictResolution": {}
   }
 }

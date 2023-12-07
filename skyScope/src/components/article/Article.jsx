@@ -1,8 +1,8 @@
 import React from "react";
 import './article.css';
 import PropTypes from 'prop-types';
-const Article = ({ imgUrl, date, text }) => (
-  <div className="blog-container_article">
+const Article = ({ key, imgUrl, date, text }) => (
+  <div key={key} className="blog-container_article">
     <div className="blog-container_article-image">
       <img src={imgUrl} alt="blog_image" />
     </div>

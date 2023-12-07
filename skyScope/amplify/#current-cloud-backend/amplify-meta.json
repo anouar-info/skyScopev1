@@ -1,89 +1,102 @@
 {
   "providers": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-skyscope-dev-153841-authRole",
-      "UnauthRoleArn": "arn:aws:iam::147390126655:role/amplify-skyscope-dev-153841-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::147390126655:role/amplify-skyscope-dev-153841-authRole",
+      "AuthRoleName": "amplify-skyscope-dev-21636-authRole",
+      "UnauthRoleArn": "arn:aws:iam::147390126655:role/amplify-skyscope-dev-21636-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::147390126655:role/amplify-skyscope-dev-21636-authRole",
       "Region": "eu-west-3",
-      "DeploymentBucketName": "amplify-skyscope-dev-153841-deployment",
-      "UnauthRoleName": "amplify-skyscope-dev-153841-unauthRole",
-      "StackName": "amplify-skyscope-dev-153841",
-      "StackId": "arn:aws:cloudformation:eu-west-3:147390126655:stack/amplify-skyscope-dev-153841/fed5c220-8ec4-11ee-8709-0a55a8f9a6ea",
-      "AmplifyAppId": "d3oh5j7twp1jml"
+      "DeploymentBucketName": "amplify-skyscope-dev-21636-deployment",
+      "UnauthRoleName": "amplify-skyscope-dev-21636-unauthRole",
+      "StackName": "amplify-skyscope-dev-21636",
+      "StackId": "arn:aws:cloudformation:eu-west-3:147390126655:stack/amplify-skyscope-dev-21636/c74308a0-9242-11ee-b434-0a9b3fc07888",
+      "AmplifyAppId": "d25j5saic51dmb"
     }
   },
   "auth": {
-    "skyscopece7eb173": {
-      "customAuth": false,
+    "skyscope74c6842c": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
       "dependsOn": [],
+      "customAuth": false,
       "frontendAuthConfig": {
-        "mfaConfiguration": "OFF",
-        "mfaTypes": [
-          "SMS"
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "signupAttributes": [
+          "EMAIL"
         ],
         "passwordProtectionSettings": {
           "passwordPolicyMinLength": 8,
           "passwordPolicyCharacters": []
         },
-        "signupAttributes": [
-          "EMAIL"
-        ],
-        "socialProviders": [],
-        "usernameAttributes": [
-          "EMAIL"
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
         ],
         "verificationMechanisms": [
           "EMAIL"
         ]
       },
-      "providerPlugin": "awscloudformation",
-      "service": "Cognito",
-      "output": {
-        "UserPoolId": "eu-west-3_HuBLpnFU5",
-        "AppClientIDWeb": "2qgv2a44tq6snkr07n6citi0bl",
-        "AppClientID": "56qupt8o2mgsjreb0mgai308si",
-        "IdentityPoolId": "eu-west-3:30e46809-610c-45a8-805c-fb4a3e28825b",
-        "UserPoolArn": "arn:aws:cognito-idp:eu-west-3:147390126655:userpool/eu-west-3_HuBLpnFU5",
-        "IdentityPoolName": "skyscopece7eb173_identitypool_ce7eb173__dev",
-        "UserPoolName": "skyscopece7eb173_userpool_ce7eb173"
-      },
-      "lastPushTimeStamp": "2023-11-29T17:08:19.854Z",
       "providerMetadata": {
-        "s3TemplateURL": "https://s3.amazonaws.com/amplify-skyscope-dev-153841-deployment/amplify-cfn-templates/auth/skyscopece7eb173-cloudformation-template.json",
-        "logicalId": "authskyscopece7eb173"
-      }
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-skyscope-dev-21636-deployment/amplify-cfn-templates/auth/skyscope74c6842c-cloudformation-template.json",
+        "logicalId": "authskyscope74c6842c"
+      },
+      "lastPushTimeStamp": "2023-12-04T04:14:04.115Z",
+      "output": {
+        "UserPoolId": "eu-west-3_Qfc1AB11w",
+        "AppClientIDWeb": "1db6kl2o3dd6dqvfm70qfdfpaq",
+        "AppClientID": "2e884pva1v2ahb9ljlghp6gi76",
+        "IdentityPoolId": "eu-west-3:79f8cb3a-3a1f-49b3-b1da-60ceb0b334e9",
+        "UserPoolArn": "arn:aws:cognito-idp:eu-west-3:147390126655:userpool/eu-west-3_Qfc1AB11w",
+        "IdentityPoolName": "skyscope74c6842c_identitypool_74c6842c__dev",
+        "UserPoolName": "skyscope74c6842c_userpool_74c6842c"
+      },
+      "lastPushDirHash": "6f5HrkQY5K5ZvkSUXhWHZ9sIDjw="
     }
   },
   "api": {
-    "skyScope": {
+    "skyscope": {
       "service": "AppSync",
       "providerPlugin": "awscloudformation",
-      "dependsOn": [],
+      "dependsOn": [
+        {
+          "attributes": [
+            "UserPoolId"
+          ],
+          "category": "auth",
+          "resourceName": "skyscope74c6842c"
+        }
+      ],
       "output": {
         "authConfig": {
           "defaultAuthentication": {
-            "authenticationType": "API_KEY",
-            "apiKeyConfig": {
-              "apiKeyExpirationDays": 30,
-              "description": "api key description"
+            "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+            "userPoolConfig": {
+              "userPoolId": "authskyscope74c6842c"
             }
           },
           "additionalAuthenticationProviders": [
             {
-              "authenticationType": "AWS_IAM"
+              "authenticationType": "API_KEY",
+              "apiKeyConfig": {
+                "apiKeyExpirationDays": 30,
+                "apiKeyExpirationDate": "2024-01-03T01:28:52.869Z",
+                "description": ""
+              }
             }
           ]
         },
-        "GraphQLAPIIdOutput": "vqcauh7pcrhvtdwb5c4n5we7du",
-        "GraphQLAPIEndpointOutput": "https://t4qkwlkemrcu3epxu3v4kwwtqe.appsync-api.eu-west-3.amazonaws.com/graphql",
-        "GraphQLAPIKeyOutput": "da2-g5v4ww3475hytmftnodkovfcsu"
+        "GraphQLAPIIdOutput": "zootk3rmizhsziyqvue2ct2nsm",
+        "GraphQLAPIEndpointOutput": "https://sodsmeyxwnexvnfbkd5e2zgnpu.appsync-api.eu-west-3.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-4fc7k5qkwrdqtew2ygkm4rgqt4"
       },
+      "lastPushTimeStamp": "2023-12-04T04:14:04.837Z",
       "providerMetadata": {
-        "s3TemplateURL": "https://s3.amazonaws.com/amplify-skyscope-dev-153841-deployment/amplify-cfn-templates/api/cloudformation-template.json",
-        "logicalId": "apiskyScope"
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-skyscope-dev-21636-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apiskyscope"
       },
-      "lastPushTimeStamp": "2023-11-29T17:08:20.597Z",
-      "lastPushDirHash": "AoUbgmXy6aF+8ga5hJzcm1/Tl3I="
+      "lastPushDirHash": "gtkAEHRgWF3vtva/dBmY0TsxdD0="
     }
   }
 }

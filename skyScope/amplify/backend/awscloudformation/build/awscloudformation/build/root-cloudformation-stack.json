@@ -1,5 +1,5 @@
 {
-  "Description": "Root Stack for AWS Amplify Console",
+  "Description": "Root Stack for AWS Amplify CLI",
   "AWSTemplateFormatVersion": "2010-09-09",
   "Parameters": {
     "DeploymentBucketName": {
@@ -152,15 +152,15 @@
         }
       }
     },
-    "authskyscopece7eb173": {
+    "authskyscope74c6842c": {
       "Type": "AWS::CloudFormation::Stack",
       "Properties": {
-        "TemplateURL": "https://s3.amazonaws.com/amplify-skyscope-dev-153841-deployment/amplify-cfn-templates/auth/skyscopece7eb173-cloudformation-template.json",
+        "TemplateURL": "https://s3.amazonaws.com/amplify-skyscope-dev-21636-deployment/amplify-cfn-templates/auth/skyscope74c6842c-cloudformation-template.json",
         "Parameters": {
-          "identityPoolName": "skyscopece7eb173_identitypool_ce7eb173",
+          "identityPoolName": "skyscope74c6842c_identitypool_74c6842c",
           "allowUnauthenticatedIdentities": false,
-          "resourceNameTruncated": "skyscoce7eb173",
-          "userPoolName": "skyscopece7eb173_userpool_ce7eb173",
+          "resourceNameTruncated": "skysco74c6842c",
+          "userPoolName": "skyscope74c6842c_userpool_74c6842c",
           "autoVerifiedAttributes": "email",
           "mfaConfiguration": "OFF",
           "mfaTypes": "SMS Text Message",
@@ -177,10 +177,10 @@
           "userpoolClientRefreshTokenValidity": 30,
           "userpoolClientWriteAttributes": "email",
           "userpoolClientReadAttributes": "email",
-          "userpoolClientLambdaRole": "skyscoce7eb173_userpoolclient_lambda_role",
+          "userpoolClientLambdaRole": "skysco74c6842c_userpoolclient_lambda_role",
           "userpoolClientSetAttributes": false,
-          "sharedId": "ce7eb173",
-          "resourceName": "skyscopece7eb173",
+          "sharedId": "74c6842c",
+          "resourceName": "skyscope74c6842c",
           "authSelections": "identityPoolAndUserPool",
           "useDefault": "default",
           "usernameAttributes": "email",
@@ -206,22 +206,22 @@
         }
       }
     },
-    "apiskyScope": {
+    "apiskyscope": {
       "Type": "AWS::CloudFormation::Stack",
       "Properties": {
-        "TemplateURL": "https://s3.amazonaws.com/amplify-skyscope-dev-153841-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "TemplateURL": "https://s3.amazonaws.com/amplify-skyscope-dev-21636-deployment/amplify-cfn-templates/api/cloudformation-template.json",
         "Parameters": {
-          "AppSyncApiName": "skyScope",
+          "AppSyncApiName": "skyscope",
           "DynamoDBBillingMode": "PAY_PER_REQUEST",
           "DynamoDBEnableServerSideEncryption": false,
-          "authRoleName": {
-            "Ref": "AuthRoleName"
+          "AuthCognitoUserPoolId": {
+            "Fn::GetAtt": [
+              "authskyscope74c6842c",
+              "Outputs.UserPoolId"
+            ]
           },
-          "unauthRoleName": {
-            "Ref": "UnauthRoleName"
-          },
-          "S3DeploymentBucket": "amplify-skyscope-dev-153841-deployment",
-          "S3DeploymentRootKey": "amplify-appsync-files/8fc0f5393fee3176868c7b5d609d601fe24cd265",
+          "S3DeploymentBucket": "amplify-skyscope-dev-21636-deployment",
+          "S3DeploymentRootKey": "amplify-appsync-files/22a29cf21a8bef5eb4b3afa42d1b1f81c461d798",
           "env": "dev"
         }
       }
@@ -230,7 +230,7 @@
       "DependsOn": [
         "AuthRole",
         "UnauthRole",
-        "authskyscopece7eb173"
+        "authskyscope74c6842c"
       ],
       "Type": "AWS::Lambda::Function",
       "Properties": {
@@ -338,7 +338,7 @@
         },
         "idpId": {
           "Fn::GetAtt": [
-            "authskyscopece7eb173",
+            "authskyscope74c6842c",
             "Outputs.IdentityPoolId"
           ]
         },

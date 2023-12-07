@@ -1,19 +1,22 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-skyscope-dev-153841-authRole",
-      "UnauthRoleArn": "arn:aws:iam::147390126655:role/amplify-skyscope-dev-153841-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::147390126655:role/amplify-skyscope-dev-153841-authRole",
+      "AuthRoleName": "amplify-skyscope-dev-21636-authRole",
+      "UnauthRoleArn": "arn:aws:iam::147390126655:role/amplify-skyscope-dev-21636-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::147390126655:role/amplify-skyscope-dev-21636-authRole",
       "Region": "eu-west-3",
-      "DeploymentBucketName": "amplify-skyscope-dev-153841-deployment",
-      "UnauthRoleName": "amplify-skyscope-dev-153841-unauthRole",
-      "StackName": "amplify-skyscope-dev-153841",
-      "StackId": "arn:aws:cloudformation:eu-west-3:147390126655:stack/amplify-skyscope-dev-153841/fed5c220-8ec4-11ee-8709-0a55a8f9a6ea",
-      "AmplifyAppId": "d3oh5j7twp1jml"
+      "DeploymentBucketName": "amplify-skyscope-dev-21636-deployment",
+      "UnauthRoleName": "amplify-skyscope-dev-21636-unauthRole",
+      "StackName": "amplify-skyscope-dev-21636",
+      "StackId": "arn:aws:cloudformation:eu-west-3:147390126655:stack/amplify-skyscope-dev-21636/c74308a0-9242-11ee-b434-0a9b3fc07888",
+      "AmplifyAppId": "d25j5saic51dmb"
     },
     "categories": {
       "auth": {
-        "skyscopece7eb173": {}
+        "skyscope74c6842c": {}
+      },
+      "api": {
+        "skyscope": {}
       }
     }
   }

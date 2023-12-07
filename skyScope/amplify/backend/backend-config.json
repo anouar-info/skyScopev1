@@ -1,18 +1,15 @@
 {
   "api": {
-    "skyScope": {
+    "skyscope": {
       "dependsOn": [],
       "output": {
         "authConfig": {
-          "additionalAuthenticationProviders": [
-            {
-              "authenticationType": "AWS_IAM"
-            }
-          ],
+          "additionalAuthenticationProviders": [],
           "defaultAuthentication": {
             "apiKeyConfig": {
+              "apiKeyExpirationDate": "2024-01-03T04:53:57.335Z",
               "apiKeyExpirationDays": 30,
-              "description": "api key description"
+              "description": ""
             },
             "authenticationType": "API_KEY"
           }
@@ -23,7 +20,7 @@
     }
   },
   "auth": {
-    "skyscopece7eb173": {
+    "skyscope74c6842c": {
       "customAuth": false,
       "dependsOn": [],
       "frontendAuthConfig": {

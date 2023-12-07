@@ -1,6 +1,6 @@
 projects:
-  skyScope:
-    schemaPath: amplify/backend/api/skyScope/build/schema.graphql
+  skyscope:
+    schemaPath: src/graphql/schema.json
     includes:
       - src/graphql/**/*.js
     excludes:
@@ -10,6 +10,6 @@ projects:
         codeGenTarget: javascript
         generatedFileName: ''
         docsFilePath: src/graphql
-        region: eu-west-3
-        apiId: null
-        maxDepth: 2
+extensions:
+  amplify:
+    version: 3
