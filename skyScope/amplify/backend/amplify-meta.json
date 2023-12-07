@@ -42,7 +42,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-skyscope-dev-21636-deployment/amplify-cfn-templates/auth/skyscope74c6842c-cloudformation-template.json",
         "logicalId": "authskyscope74c6842c"
       },
-      "lastPushTimeStamp": "2023-12-04T04:53:11.894Z",
+      "lastPushTimeStamp": "2023-12-07T16:55:41.733Z",
       "output": {
         "UserPoolId": "eu-west-3_Qfc1AB11w",
         "AppClientIDWeb": "1db6kl2o3dd6dqvfm70qfdfpaq",
@@ -76,12 +76,13 @@
         "GraphQLAPIEndpointOutput": "https://sodsmeyxwnexvnfbkd5e2zgnpu.appsync-api.eu-west-3.amazonaws.com/graphql",
         "GraphQLAPIKeyOutput": "da2-4fc7k5qkwrdqtew2ygkm4rgqt4"
       },
-      "lastPushTimeStamp": "2023-12-04T04:54:02.586Z",
+      "lastPushTimeStamp": "2023-12-07T16:55:41.737Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-skyscope-dev-21636-deployment/amplify-cfn-templates/api/cloudformation-template.json",
         "logicalId": "apiskyscope"
       },
-      "lastPushDirHash": "gtkAEHRgWF3vtva/dBmY0TsxdD0="
+      "lastPushDirHash": "hiBjU0apx4O3jUmRNPD7rs/cwFg="
     }
-  }
+  },
+  "hosting": {}
 }

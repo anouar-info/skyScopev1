@@ -42,7 +42,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-skyscope-dev-21636-deployment/amplify-cfn-templates/auth/skyscope74c6842c-cloudformation-template.json",
         "logicalId": "authskyscope74c6842c"
       },
-      "lastPushTimeStamp": "2023-12-04T04:14:04.115Z",
+      "lastPushTimeStamp": "2023-12-07T16:31:29.644Z",
       "output": {
         "UserPoolId": "eu-west-3_Qfc1AB11w",
         "AppClientIDWeb": "1db6kl2o3dd6dqvfm70qfdfpaq",
@@ -59,44 +59,51 @@
     "skyscope": {
       "service": "AppSync",
       "providerPlugin": "awscloudformation",
-      "dependsOn": [
-        {
-          "attributes": [
-            "UserPoolId"
-          ],
-          "category": "auth",
-          "resourceName": "skyscope74c6842c"
-        }
-      ],
+      "dependsOn": [],
       "output": {
         "authConfig": {
           "defaultAuthentication": {
-            "authenticationType": "AMAZON_COGNITO_USER_POOLS",
-            "userPoolConfig": {
-              "userPoolId": "authskyscope74c6842c"
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 30,
+              "apiKeyExpirationDate": "2024-01-03T04:53:57.335Z",
+              "description": ""
             }
           },
-          "additionalAuthenticationProviders": [
-            {
-              "authenticationType": "API_KEY",
-              "apiKeyConfig": {
-                "apiKeyExpirationDays": 30,
-                "apiKeyExpirationDate": "2024-01-03T01:28:52.869Z",
-                "description": ""
-              }
-            }
-          ]
+          "additionalAuthenticationProviders": []
         },
         "GraphQLAPIIdOutput": "zootk3rmizhsziyqvue2ct2nsm",
         "GraphQLAPIEndpointOutput": "https://sodsmeyxwnexvnfbkd5e2zgnpu.appsync-api.eu-west-3.amazonaws.com/graphql",
         "GraphQLAPIKeyOutput": "da2-4fc7k5qkwrdqtew2ygkm4rgqt4"
       },
-      "lastPushTimeStamp": "2023-12-04T04:14:04.837Z",
+      "lastPushTimeStamp": "2023-12-07T16:31:30.497Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-skyscope-dev-21636-deployment/amplify-cfn-templates/api/cloudformation-template.json",
         "logicalId": "apiskyscope"
       },
-      "lastPushDirHash": "gtkAEHRgWF3vtva/dBmY0TsxdD0="
+      "lastPushDirHash": "hiBjU0apx4O3jUmRNPD7rs/cwFg="
+    }
+  },
+  "hosting": {
+    "S3AndCloudFront": {
+      "service": "S3AndCloudFront",
+      "providerPlugin": "awscloudformation",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-skyscope-dev-21636-deployment/amplify-cfn-templates/hosting/template.json",
+        "logicalId": "hostingS3AndCloudFront"
+      },
+      "lastPushTimeStamp": "2023-12-07T16:31:30.497Z",
+      "output": {
+        "CloudFrontSecureURL": "https://d3d933nya5ew5r.cloudfront.net",
+        "S3BucketSecureURL": "https://skycope-20231207172430-hostingbucket-dev.s3.amazonaws.com",
+        "CloudFrontOriginAccessIdentity": "E1OO2ZZ2742PSJ",
+        "WebsiteURL": "http://skycope-20231207172430-hostingbucket-dev.s3-website.eu-west-3.amazonaws.com",
+        "CloudFrontDistributionID": "E2MJGXZYQKW1QB",
+        "Region": "eu-west-3",
+        "HostingBucketName": "skycope-20231207172430-hostingbucket-dev",
+        "CloudFrontDomainName": "d3d933nya5ew5r.cloudfront.net"
+      },
+      "lastPushDirHash": "X1AAlSLM/EYaxZR7l8T5fN12sdU="
     }
   }
 }

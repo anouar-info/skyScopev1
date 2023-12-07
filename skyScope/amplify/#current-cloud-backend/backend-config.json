@@ -1,32 +1,17 @@
 {
   "api": {
     "skyscope": {
-      "dependsOn": [
-        {
-          "attributes": [
-            "UserPoolId"
-          ],
-          "category": "auth",
-          "resourceName": "skyscope74c6842c"
-        }
-      ],
+      "dependsOn": [],
       "output": {
         "authConfig": {
-          "additionalAuthenticationProviders": [
-            {
-              "apiKeyConfig": {
-                "apiKeyExpirationDate": "2024-01-03T01:28:52.869Z",
-                "apiKeyExpirationDays": 30,
-                "description": ""
-              },
-              "authenticationType": "API_KEY"
-            }
-          ],
+          "additionalAuthenticationProviders": [],
           "defaultAuthentication": {
-            "authenticationType": "AMAZON_COGNITO_USER_POOLS",
-            "userPoolConfig": {
-              "userPoolId": "authskyscope74c6842c"
-            }
+            "apiKeyConfig": {
+              "apiKeyExpirationDate": "2024-01-03T04:53:57.335Z",
+              "apiKeyExpirationDays": 30,
+              "description": ""
+            },
+            "authenticationType": "API_KEY"
           }
         }
       },
@@ -60,6 +45,12 @@
       },
       "providerPlugin": "awscloudformation",
       "service": "Cognito"
+    }
+  },
+  "hosting": {
+    "S3AndCloudFront": {
+      "providerPlugin": "awscloudformation",
+      "service": "S3AndCloudFront"
     }
   }
 }

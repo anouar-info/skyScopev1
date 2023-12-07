@@ -8,9 +8,6 @@
       "Type": "String",
       "Default": "AppSyncSimpleTransform"
     },
-    "AuthCognitoUserPoolId": {
-      "Type": "String"
-    },
     "DynamoDBModelTableReadIOPS": {
       "Type": "Number",
       "Default": 5,
@@ -61,7 +58,7 @@
     "GraphQLAPI": {
       "Type": "AWS::AppSync::GraphQLApi",
       "Properties": {
-        "AuthenticationType": "AMAZON_COGNITO_USER_POOLS",
+        "AuthenticationType": "API_KEY",
         "Name": {
           "Fn::Join": [
             "",
@@ -75,20 +72,6 @@
               }
             ]
           ]
-        },
-        "AdditionalAuthenticationProviders": [
-          {
-            "AuthenticationType": "API_KEY"
-          }
-        ],
-        "UserPoolConfig": {
-          "AwsRegion": {
-            "Ref": "AWS::Region"
-          },
-          "DefaultAction": "ALLOW",
-          "UserPoolId": {
-            "Ref": "AuthCognitoUserPoolId"
-          }
         }
       }
     },
@@ -128,7 +111,7 @@
             "ApiId"
           ]
         },
-        "Expires": 1704255141
+        "Expires": 1704558328
       }
     },
     "GraphQLAPINONEDS95A13CF0": {

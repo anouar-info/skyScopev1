@@ -1,4 +1,4 @@
-type article @aws_api_key {
+type article {
   id: ID!
   title: String!
   body: String!
@@ -158,7 +158,7 @@ enum ModelSortDirection {
   DESC
 }
 
-type ModelArticleConnection @aws_api_key {
+type ModelArticleConnection {
   items: [article]!
   nextToken: String
 }
@@ -175,8 +175,8 @@ input ModelArticleFilterInput {
 }
 
 type Query {
-  getArticle(id: ID!): article @aws_api_key
-  listArticles(filter: ModelArticleFilterInput, limit: Int, nextToken: String): ModelArticleConnection @aws_api_key
+  getArticle(id: ID!): article
+  listArticles(filter: ModelArticleFilterInput, limit: Int, nextToken: String): ModelArticleConnection
 }
 
 input ModelArticleConditionInput {
@@ -210,9 +210,9 @@ input DeleteArticleInput {
 }
 
 type Mutation {
-  createArticle(input: CreateArticleInput!, condition: ModelArticleConditionInput): article @aws_api_key
-  updateArticle(input: UpdateArticleInput!, condition: ModelArticleConditionInput): article @aws_api_key
-  deleteArticle(input: DeleteArticleInput!, condition: ModelArticleConditionInput): article @aws_api_key
+  createArticle(input: CreateArticleInput!, condition: ModelArticleConditionInput): article
+  updateArticle(input: UpdateArticleInput!, condition: ModelArticleConditionInput): article
+  deleteArticle(input: DeleteArticleInput!, condition: ModelArticleConditionInput): article
 }
 
 input ModelSubscriptionArticleFilterInput {
@@ -226,7 +226,7 @@ input ModelSubscriptionArticleFilterInput {
 }
 
 type Subscription {
-  onCreateArticle(filter: ModelSubscriptionArticleFilterInput): article @aws_subscribe(mutations: ["createArticle"]) @aws_api_key
-  onUpdateArticle(filter: ModelSubscriptionArticleFilterInput): article @aws_subscribe(mutations: ["updateArticle"]) @aws_api_key
-  onDeleteArticle(filter: ModelSubscriptionArticleFilterInput): article @aws_subscribe(mutations: ["deleteArticle"]) @aws_api_key
+  onCreateArticle(filter: ModelSubscriptionArticleFilterInput): article @aws_subscribe(mutations: ["createArticle"])
+  onUpdateArticle(filter: ModelSubscriptionArticleFilterInput): article @aws_subscribe(mutations: ["updateArticle"])
+  onDeleteArticle(filter: ModelSubscriptionArticleFilterInput): article @aws_subscribe(mutations: ["deleteArticle"])
 }

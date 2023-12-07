@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "aws s3 sync s3://skycope-20231207172430-hostingbucket-dev"
+    
   },
   "dependencies": {
     "@aws-amplify/ui-react": "^6.0.3",
